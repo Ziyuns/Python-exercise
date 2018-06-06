@@ -1,0 +1,6 @@
+import os
+path = r'C:\Users\Administrator\Desktop\新建文件夹'
+count = 1
+for file in os.listdir(path):
+    newfile = file[9:]
+    os.rename(os.path.join(path,file),os.path.join(path,newfile))
